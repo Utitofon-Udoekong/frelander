@@ -1,0 +1,168 @@
+:root{
+    --mainWhite: #fff;
+    --maingrey: #7F7F7F;
+    --mainBrown: #007bff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: Poppins, Arial, sans-serif;
+}
+body{
+    background: #000 !important;
+}
+.logo{
+    font-size: 40px !important;
+    font-weight: 500;
+    color: var(--mainWhite) !important;
+    font-family: Cookie, Arial, sans-serif, cursive
+}
+header{
+    height: 110vh;
+    background-image: url(../images/bg_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    margin: 0 auto;
+    padding: 0 50px;
+    transition: .5s;
+}
+nav.active{
+    position: fixed;
+    z-index: 1000;
+    width: 100% !important;
+    background: #1B1B1B !important;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+nav.active ul li a{
+    color: var(--mainWhite) !important ;
+}
+nav ul li{
+    margin: 0 10px;
+}
+nav ul li a{
+    color: var(--maingrey) !important;    
+    transition: .5s;
+    font-weight: 400;
+    font-size: 14px;
+}
+nav ul li a.active{
+    color: var(--mainBrown) !important;
+}
+nav ul li a:hover{
+    color: var(--mainBrown) !important;
+}
+.landing{
+    margin-top: 100px;
+}
+.landing p{
+    font-size: 50px;
+    color: var(--mainWhite) !important;
+    line-height: 9vh;
+}
+.appointment a{
+    padding: 17px 20px !important;
+    background: var(--mainBrown);
+    border-radius: 30px;
+    border: 1px solid var(--mainBrown);
+    margin-top: 40px;
+}
+.appointment a:hover{
+    background: none;
+    border: 1px solid var(--mainBrown);
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video a{
+    color: var(--mainWhite);
+    font-size: 20px;
+    padding: 20px 30px;
+    border: 1px solid var(--mainWhite);
+    border-radius: 50%;
+    animation: pulse 2s linear infinite;
+}
+.video a:hover{
+    border: 1px solid var(--mainBrown);
+    color: var(--mainBrown);
+}
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(255,255,255,.2);
+    }
+    70%{
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+.infos{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.locales{
+    justify-content: flex-end;
+    background: #000;
+    padding: 5px;
+}
+.place{
+    padding: 10px;
+}
+.place i{
+    color: var(--mainBrown);
+    font-size: 17px;
+}
+.place h5{
+    color: var(--mainWhite);
+}
+.place p{
+    color: #4C4C4C;
+}
+.socials{
+    background: var(--mainBrown);
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+}
+.socials i{
+    font-size: 23px;
+    color: var(--mainWhite);
+    margin: 0 20px;
+    cursor: pointer;
+}
+.welcome, .services, .work{
+    height: 80vh;
+    background: #1B1B1B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.services{
+    background: #000;
+}
+.welcome h5, .services h5, .work h5{
+    color: var(--mainWhite);
+    font-size: 30px;
+}
+.welcome p, .work p{
+    color: rgba(99,99,99);
+}
+.welcome h5 span{
+    color: var(--mainBrown);
+}
